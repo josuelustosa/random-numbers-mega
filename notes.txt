@@ -1,0 +1,7 @@
+Material de Apoio
+
+https://pt.piliapp.com/random/number/
+https://www.4devs.com.br/gerador_de_numeros_aleatorios
+https://www.programiz.com/javascript/examples/random-number
+https://www.freecodecamp.org/news/javascript-random-number-how-to-generate-a-random-number-in-js/
+https://www.w3schools.com/css/css_form.asp
