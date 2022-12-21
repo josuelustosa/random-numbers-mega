@@ -24,5 +24,5 @@ console.log(
 );
 
 document.getElementById("numeros-sorteados").innerHTML = numerosSorteados.map((item, index) => {
-  return '<span class="badge text-bg-success" style="font-size: 20px">' + item + '</span>'
+  return '<span class="badge text-bg-success mb-2" style="font-size: 16px">' + item + '</span>'
 }).join(" ")
