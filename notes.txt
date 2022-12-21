@@ -5,3 +5,6 @@ https://www.4devs.com.br/gerador_de_numeros_aleatorios
 https://www.programiz.com/javascript/examples/random-number
 https://www.freecodecamp.org/news/javascript-random-number-how-to-generate-a-random-number-in-js/
 https://www.w3schools.com/css/css_form.asp
+
+
+https://www.sololearn.com/compiler-playground/WaFH4sVitUf9
