@@ -1,25 +1,28 @@
-var array = [1, 2, 3, 4, 5, 6],
-  resultNumbers = [];
+var qntdNumSort = [1, 2, 3, 4, 5, 6],
+  numerosSorteados = [];
 
-// input from the user
+  console.log(qntdNumSort)
+
+// entrada do usuário
 const min = parseInt(prompt("Enter a min value: "));
 const max = parseInt(prompt("Enter a max value: "));
 
-for (let numerosSort of array) {
-  // generating a random number
+for (let numeroSort of qntdNumSort) {
   let numeroRepetido = true;
 
   while (numeroRepetido) {
-    numerosSort = Math.floor(Math.random() * (max - min + 1) + min);
-    numeroRepetido = resultNumbers.includes(numerosSort);
+    numeroSort = Math.floor(Math.random() * (max - min + 1) + min);
+    numeroRepetido = numerosSorteados.includes(numeroSort);
   }
 
-  resultNumbers.push(numerosSort);
+  numerosSorteados.push(numeroSort);
 }
 
-// display a random number
+// exibe os números aleatórios
 console.log(
-  `Random value between ${min} and ${max} is ${resultNumbers.join(", ")}`
+  `Valor aleatório entre ${min} e ${max} são: ${numerosSorteados}`
 );
 
-document.getElementById("demo").innerHTML = resultNumbers.join(", ");
+document.getElementById("numeros-sorteados").innerHTML = numerosSorteados.map((item, index) => {
+  return '<span class="badge text-bg-success" style="font-size: 20px">' + item + '</span>'
+}).join(" ")
