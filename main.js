@@ -1,11 +1,9 @@
 var qntdNumSort = [1, 2, 3, 4, 5, 6],
   numerosSorteados = [];
 
-  console.log(qntdNumSort)
-
 // entrada do usuário
-const min = parseInt(prompt("Enter a min value: "));
-const max = parseInt(prompt("Enter a max value: "));
+const min = parseInt(prompt("Informe Número Inicial: "));
+const max = parseInt(prompt("Informe Número Final: "));
 
 for (let numeroSort of qntdNumSort) {
   let numeroRepetido = true;
@@ -18,11 +16,26 @@ for (let numeroSort of qntdNumSort) {
   numerosSorteados.push(numeroSort);
 }
 
-// exibe os números aleatórios
-console.log(
-  `Valor aleatório entre ${min} e ${max} são: ${numerosSorteados}`
-);
+// ordenando os números aleatórios
+const numerosOrdenados = numerosSorteados.map(function (item, index) {
+  return { index: index, value: item };
+});
 
-document.getElementById("numeros-sorteados").innerHTML = numerosSorteados.map((item, index) => {
-  return '<span class="badge text-bg-success mb-2" style="font-size: 16px">' + item + '</span>'
-}).join(" ")
+numerosOrdenados.sort(function (a, b) {
+  return +(a.value > b.value) || +(a.value === b.value) - 1;
+});
+
+const resultNumerosOrdenados = numerosOrdenados.map((item) => {
+  return numerosSorteados[item.index];
+});
+
+// exibe os números aleatórios (ordenados)
+document.getElementById("numeros-sorteados").innerHTML = resultNumerosOrdenados
+  .map((index) => {
+    return (
+      '<span class="badge text-bg-success mb-2" style="font-size: 16px">' +
+      index +
+      "</span>"
+    );
+  })
+  .join(" ");
