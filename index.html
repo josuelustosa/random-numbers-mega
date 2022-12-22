@@ -41,19 +41,20 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container col-xl-10 col-xxl-8 px-4 py-5 border-bottom">
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
       <div class="row align-items-center g-lg-5 py-5">
         <div class="col-lg-5 text-center text-lg-start">
           <h1 class="display-4 fw-bold lh-1 mb-3">
             Gerador de Números da Mega da Virada
           </h1>
           <p class="col-lg-10 fs-4">
-            Sorteie 6 números aleatórios entre 1 e
-            60.
+            Sorteie 6 números aleatórios entre 1 e 60.
           </p>
         </div>
-        <div class="col-md-10 mx-auto col-lg-5 mt-2 shadow p-3 mb-2 bg-body rounded">
-          <form class="p-4 p-md-5 border rounded-3">
+        <div
+          class="col-md-10 mx-auto col-lg-5 mt-2 shadow p-3 mb-2 bg-body rounded"
+        >
+          <form class="p-2 p-md-4 border rounded-3">
             <div class="form-floating mb-3">
               <input
                 type="number"
@@ -81,14 +82,16 @@
             <button class="w-100 btn btn-lg btn-outline-success" type="submit">
               Sortear Números
             </button>
-            <hr class="my-4" />
+          </form>
+          <div class="my-3">
             <p class="text-center fw-bold mb-2" id="mensagem"></p>
             <p class="text-center" id="numeros-sorteados"></p>
-          </form>
+          </div>
         </div>
       </div>
     </div>
     <div class="container mt-2">
+      <hr class="my-2" />
       <p class="text-center">
         Desenvolvido por
         <a
