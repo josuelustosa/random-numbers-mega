@@ -30,7 +30,7 @@ const resultNumerosOrdenados = numerosOrdenados.map((item) => {
 });
 
 // exibe os números aleatórios (ordenados)
-document.querySelector("#mensagem").innerHTML = 'Seus números da sorte são:'
+document.querySelector("#mensagem").innerHTML = "Seus números da sorte são:";
 document.querySelector("#numeros-sorteados").innerHTML = resultNumerosOrdenados
   .map((index) => {
     return (

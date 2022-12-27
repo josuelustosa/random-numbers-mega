@@ -63,7 +63,7 @@
                 min="1"
                 max="53"
                 value="1"
-                placeholder="name@example.com"
+                placeholder="Número Inicial"
               />
               <label for="floatingMin">Número Inicial</label>
             </div>
@@ -75,17 +75,18 @@
                 min="7"
                 max="60"
                 value="60"
-                placeholder="Password"
+                placeholder="Número Final"
               />
               <label for="floatingMax">Número Final</label>
             </div>
-            <button class="w-100 btn btn-lg btn-outline-success" type="submit">
+            <!-- <button class="w-100 btn btn-lg btn-outline-success" value="Calcular" onclick="sortearNumeros()>
               Sortear Números
-            </button>
+            </button> -->
+            <input class="w-100 btn btn-lg btn-outline-success" type="button" value="Sortear Números" onclick="sortearNumeros()">
           </form>
           <div class="my-3">
             <p class="text-center fw-bold mb-2" id="mensagem"></p>
-            <p class="text-center" id="numeros-sorteados"></p>
+            <p class="text-center" id="numeros-sorteados">Seus números da sorte aparecerão aqui...</p>
           </div>
         </div>
       </div>
@@ -109,6 +110,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script src="./main.js"></script>
+    <!-- <script src="./main.js"></script> -->
+    <script src="./test.js"></script>
   </body>
 </html>
