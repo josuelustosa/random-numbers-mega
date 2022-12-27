@@ -31,6 +31,16 @@
     />
     <meta name="description" content="Gerador de Números da Mega da Virada" />
     <meta name="author" content="Josué Lustosa" />
+    <meta property="og:title" content="Gerador de Números da Mega da Virada" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://github.com/josuelustosa/random-numbers-mega/blob/main/assets/img/Mega-da-Virada.png"
+    />
+    <meta
+      property="og:site_name"
+      content="https://josuelustosa.github.io/random-numbers-mega"
+    />
 
     <!-- Meta tags - padrão -->
     <meta charset="UTF-8" />
@@ -38,7 +48,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Números Mega da Virada</title>
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <div class="container col-xl-10 col-xxl-8 px-4 py-5">
@@ -82,11 +92,18 @@
             <!-- <button class="w-100 btn btn-lg btn-outline-success" value="Calcular" onclick="sortearNumeros()>
               Sortear Números
             </button> -->
-            <input class="w-100 btn btn-lg btn-outline-success" type="button" value="Sortear Números" onclick="sortearNumeros()">
+            <input
+              class="w-100 btn btn-lg btn-outline-success"
+              type="button"
+              value="Sortear Números"
+              onclick="sortearNumeros()"
+            />
           </form>
           <div class="my-3">
             <p class="text-center fw-bold mb-2" id="mensagem"></p>
-            <p class="text-center" id="numeros-sorteados">Seus números da sorte aparecerão aqui...</p>
+            <p class="text-center" id="numeros-sorteados">
+              Seus números da sorte aparecerão aqui...
+            </p>
           </div>
         </div>
       </div>
